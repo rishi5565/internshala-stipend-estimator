@@ -59,9 +59,9 @@ def estimate():
         scaler = pickle.load(scaler_file)
 
         prediction = model.predict(scaler.transform(cat_vector.reshape(1,-1)))
-        pred_range = "Rs. " + str(int((prediction-1963).tolist()[0])) + " to " + str(int((prediction+1963).tolist()[0])) + " approx."
+        pred = "Rs. " + str(int((prediction).tolist()[0])) + " approx."
         
-        return render_template('result.html',prediction=pred_range)
+        return render_template('result.html',prediction=pred)
 
     
 if __name__ == '__main__':
