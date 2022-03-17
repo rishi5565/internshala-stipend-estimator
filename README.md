@@ -96,5 +96,5 @@ In this final step, we built a Flask API and hosted it online that takes in inpu
 ### [Note]: ***Please refer to the Detailed Project Report word document for all the in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
 
 Thank You,
-Rishiraj Chowdhury
-[rishiraj5565@gmail.com](mailto:rishiraj5565@gmail.com)
+
+Rishiraj Chowdhury ([rishiraj5565@gmail.com](mailto:rishiraj5565@gmail.com))
