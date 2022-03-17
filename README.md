@@ -93,7 +93,7 @@ In this final step, we built a Flask API and hosted it online that takes in inpu
 
 **[Link of Productionized Model](https://flaskinternshalamodel-production.up.railway.app/)**
 
-### [Note]: ***Please refer to the Detailed Project Report word document for all the in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
+### [Note]: ***Please refer to the Project Report word document for all the detailed in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
 
 Thank You,
 
