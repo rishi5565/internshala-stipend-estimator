@@ -11,7 +11,7 @@
 
 * Built a machine learning model with the best hyper-parameters.
 
-* Built a client facing API using flask from scratch and hosted the app online for anyone to use.
+* Productionized the model by building a client facing API using flask from scratch and hosted the app online for anyone to use.
 
 **[Link of Productionized Model](https://flaskinternshalamodel-production.up.railway.app/)**
 
