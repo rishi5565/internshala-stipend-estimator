@@ -24,7 +24,7 @@
 ## Resources Used
 * **Web Scraper:** [GitHub Link](https://github.com/het-parekh/Internshala-Web-Scraper-Internshala.com)
 (The owner can be contacted on [hetparekh26@gmail.com](mailto:hetparekh26@gmail.com) for any inquiries.)
-> With some modifications, tweaking and debugging, I was able to make the code work successfully.
+> The code required some modifications and tweaking to get it working.
 
 ## Features
 The following features were retrieved with the Web Scraper:
