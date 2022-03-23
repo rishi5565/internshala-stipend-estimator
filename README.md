@@ -1,6 +1,6 @@
 # **Project Overview**
 
-* Created an app that estimates Internship stipends on the basis of personalized factors for each individual user with inputs ranging widely from location, skills, perks, duration, etc.
+* Built an app that estimates Internship stipends on the basis of personalized factors for each individual user with inputs ranging widely from location, skills, perks, duration, etc.
 
 * Scraped over 15000+ internship postings from Internshala.com using web scraper written on Python.
 
@@ -11,9 +11,9 @@
 
 * Built a machine learning model with the best hyper-parameters.
 
-* Productionized the model by building a client facing API using flask from scratch and hosted the app online for anyone to use.
+* Deployed the model for end user by building a client facing API using flask from scratch and hosted the app online for anyone to use.
 
-**[Link of Productionized Model](https://flaskinternshalamodel-production.up.railway.app/)**
+**[Link of Deployed Model](https://flaskinternshalamodel-production.up.railway.app/)**
 
 ## Potential Users
 
@@ -88,10 +88,10 @@ Next, we performed a Randomized Search with multiple fits to find the best hyper
 ### Model Performance
 * Mean Absolute Error: ~ Rs. 3000
 
-## Productionization
+## Model Deployment
 In this final step, we built a Flask API and hosted it online that takes in inputs from the user such as location, skills, perks, duration, etc. and returns an estimated stipend amount.
 
-**[Link of Productionized Model](https://flaskinternshalamodel-production.up.railway.app/)**
+**[Link of Deployed Model](https://flaskinternshalamodel-production.up.railway.app/)**
 
 ### [Note]: ***Please refer to the Project Report word document for all the detailed in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
 
