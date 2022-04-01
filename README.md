@@ -60,7 +60,7 @@ We explored the data from various angles to find all the interesting points of i
 
 * Top 15 Hiring Companies
 ![Top 15 Hiring Companies](https://github.com/rishi5565/internshala-stipend-estimator/raw/main/EDA%20Images/company.png)
-* Top 15 Titles
+* Top 15 Most Required Titles
 ![Top 15 Titles](https://github.com/rishi5565/internshala-stipend-estimator/raw/main/EDA%20Images/title.png)
 * Top 15 Locations offering most In-Office Internships
 ![Top 15 Locations offering most In-Office Internships](https://github.com/rishi5565/internshala-stipend-estimator/raw/main/EDA%20Images/location.png)
@@ -72,28 +72,28 @@ We explored the data from various angles to find all the interesting points of i
 ![Number of Openings - Stipend KDE Plot](https://github.com/rishi5565/internshala-stipend-estimator/raw/main/EDA%20Images/stipendnoopenkde.png)
 
 ## Model Building
-We transformed the target variable with Box-Cox Transformation after finding the optimal lambda value. We decided to use this transformation with minimal skewness of -0.02 for our Model Building. 
+We transformed the target variable with Box-Cox Transformation after finding the optimal lambda value. We decided to use this transformation with minimal skewness of -0.09 for our Model Building. 
 * Before and After Box-Cox Transformation
 ![Before and After Box-Cox Transformation](https://github.com/rishi5565/internshala-stipend-estimator/raw/main/EDA%20Images/boxcoxtrans.png)
 
 We created dummy variables and performed various Pre-Modelling tests such as One-Way ANOVA, Pearson Correlation, Variance Inflation Factor(VIF), etc.
 
 Next, we decided to use Light Gradient Boosting Machine (LGBM) Regressor to train our model.
-**The reason being is that our Dataset is quite large (14,000+ observations) and Light GBM is very good at handling large size of data (above 10,000) while also staying efficient as it takes lower memory to run. It also performs better on Datasets with higher complexity as it provides options for regularization and can also be further hyper-parameter tuned to improve the balance between bias and variance.**
+**The reason being is that our Dataset is quite large (Around 14,000 observations with high number of features) and Light GBM is very good at handling large size of data (above 10,000) while also staying efficient as it takes lower memory to run. It also performs better on Datasets with higher complexity as it provides options for regularization and can also be further hyper-parameter tuned to improve the balance between bias and variance.**
 
 We tuned the hyper-parameters of our model to reduce the complexity and improve performance. We provided L2 Regularization with an ideal lambda value that we were able to derive by running a For-Loop. We used L2 Regularization because it disperses the error terms in all the weights which can lead to more accurate final model that can generalize better.
 
 Next, we performed a Randomized Search with multiple fits to find the best hyper-parameters for our model.
 
 ### Model Performance
-* Mean Absolute Error: ~ Rs. 3000
+* Mean Absolute Error: ~ Rs. 2500
 
 ## Model Deployment
 In this final step, we built a Flask API and hosted it online that takes in inputs from the user such as location, skills, perks, duration, etc. and returns an estimated stipend amount.
 
 **[Link of Deployed Model](https://flaskinternshalamodel-production.up.railway.app/)**
 
-### [Note]: ***Please refer to the Project Report word document for all the detailed in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
+### [Note]: ***Please refer to the Project Notebook fie for all the detailed in-depth information regarding every decision made and the entire thinking process while working on this project. The above information is just a brief summary of the project.***
 
 Thank You,
 

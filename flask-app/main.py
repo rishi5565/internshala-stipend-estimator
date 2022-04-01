@@ -14,8 +14,6 @@ def estimate():
     if request.method=='POST':
         result=request.form
         location = result['location']
-        openings = result['openings']
-        applicants = result['applicants']
         title = result['title']
         perks = result.getlist('perks')
         duration = result['duration']
@@ -39,10 +37,6 @@ def estimate():
         except:
             pass
         try:
-            cat_vector[index_dict['Number of Openings']] = int(openings)
-        except:
-            pass
-        try:
             cat_vector[perk_list] = 1
         except:
             pass
@@ -52,10 +46,6 @@ def estimate():
             pass
         try:
             cat_vector[index_dict['Title_'+str(title)]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['Applicants_'+str(applicants)]] = 1
         except:
             pass
         try:
@@ -70,7 +60,7 @@ def estimate():
         scaler = pickle.load(scaler_file)
 
         prediction = model.predict(scaler.transform(cat_vector.reshape(1,-1)))
-        lmda = 0.2731531291764417
+        lmda = 0.49576864409121985
         prediction = inv_boxcox(prediction, lmda)
         pred = "Rs. " + str(int((prediction).tolist()[0])) + " approx."
         
